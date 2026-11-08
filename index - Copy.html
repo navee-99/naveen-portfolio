@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Naveen Kamalesan | Full Stack Engineer – Java, Spring Boot, React, Angular, AWS</title>
+<meta name="description" content="Full Stack Engineer with 5+ years building enterprise data, integration and reporting systems for Daimler Truck, Mercedes-Benz and Ford.">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#edf0f3;--ink:#121b24;--mute:#4d5b69;--amber:#c85f0f;--amber-l:#f2872e;--teal:#0c7c86;--line:#c3ccd6;--card:#fff;--max:1080px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Archivo,"Arial Narrow",sans-serif;font-stretch:75%;margin:0;line-height:1.02}
+a{color:inherit}.w{width:min(var(--max),100% - 36px);margin:auto}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+nav{position:sticky;top:0;z-index:5;background:var(--ink);color:#fff}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:56px;gap:16px}
+nav b{font:800 20px Archivo,sans-serif;font-stretch:75%;letter-spacing:.5px}
+nav div{display:flex;gap:20px;font-size:14px}nav a{text-decoration:none;opacity:.85}nav a:hover{opacity:1;color:var(--amber-l)}
+.hero{padding:64px 0 36px}
+h1{font-size:clamp(44px,8vw,96px);font-weight:900;letter-spacing:-1px;max-width:15ch}
+.hero p{font-size:19px;max-width:60ch;color:var(--mute);margin:20px 0}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 18px;border:2px solid var(--ink);font-weight:600;text-decoration:none;font-size:15px}
+.btn.p{background:var(--amber);border-color:var(--amber);color:#fff}.btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.trace{margin-top:40px;background:var(--ink);padding:22px 12px 14px;color:#fff}
+.trace svg{width:100%;height:auto;display:block}
+.trace .ln{stroke:var(--amber-l);stroke-width:3;fill:none;stroke-dasharray:1000;stroke-dashoffset:1000;animation:d 2.4s ease-out .3s forwards}
+@keyframes d{to{stroke-dashoffset:0}}
+.trace text{font:500 13px "IBM Plex Sans";fill:#cdd6df}.trace .t{font-weight:600;fill:#fff;font-size:14px}
+@media(prefers-reduced-motion:reduce){.trace .ln{animation:none;stroke-dashoffset:0}}
+.facts{display:flex;flex-wrap:wrap;gap:8px 36px;margin:22px 0 0;padding:0;list-style:none;font-size:15px;color:var(--mute)}
+.facts b{color:var(--ink)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(32px,5vw,52px);font-weight:800;margin-bottom:10px}
+.lede{color:var(--mute);max-width:62ch;margin:0 0 26px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0}
+.tabs button{font:600 14px "IBM Plex Sans";padding:10px 14px;border:1px solid var(--line);background:#dde3e9;cursor:pointer;color:var(--ink)}
+.tabs button[aria-selected=true]{background:var(--card);border-color:var(--ink);border-bottom-color:var(--card);position:relative;top:1px}
+.panel{background:var(--card);border:1px solid var(--ink);padding:26px}
+.panel h3{font-size:30px;font-weight:800}.who{color:var(--teal);font-weight:600;font-size:14px;margin:6px 0 14px}
+.cols{display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
+.panel ul{margin:0;padding-left:20px}.panel li{margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}.chips span{border:1px solid var(--line);padding:2px 9px;font-size:13px;background:var(--paper)}
+.mini{border-left:3px solid var(--amber);padding-left:16px}.mini h4{margin:0 0 8px;font-size:14px}
+.stage{display:flex;gap:6px;align-items:stretch;margin:10px 0}
+.stage div{flex:1;border:1px solid var(--line);padding:8px;font-size:13px;background:var(--paper);text-align:center}
+.stage div.hl{border-color:var(--amber);background:#fdeede}
+.map{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:22px 0}
+.map div{background:var(--card);border:1px solid var(--ink);margin-left:-1px;padding:14px 12px;position:relative;min-height:96px}
+.map small{display:block;color:var(--amber);font-weight:600;font-size:12px;margin-bottom:4px}
+.map div:not(:last-child):after{content:"";position:absolute;right:-9px;top:50%;border:8px solid transparent;border-left:9px solid var(--ink);border-right:0;z-index:2;transform:translateY(-50%)}
+.base{background:var(--ink);color:#cdd6df;padding:10px 14px;font-size:14px;margin-top:-1px}
+.note{border-left:3px solid var(--teal);padding:2px 0 2px 16px;max-width:70ch;margin-top:20px}
+.charts{display:grid;grid-template-columns:1.5fr 1fr;gap:20px}.box{background:var(--card);border:1px solid var(--line);padding:20px}
+.box h3{font-size:22px;margin-bottom:4px}.box p{color:var(--mute);font-size:14px;margin:0 0 14px}
+svg text{font-family:"IBM Plex Sans",sans-serif}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:6px 8px;text-align:center;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}
+th{font-weight:600;font-size:12px;vertical-align:bottom}.dot{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--teal)}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:0;counter-reset:s}
+.steps div{border:1px solid var(--ink);margin-left:-1px;padding:14px 10px;background:var(--card);font-size:14px;counter-increment:s}
+.steps div:before{content:counter(s);display:block;font:800 28px Archivo;font-stretch:75%;color:var(--amber)}
+.steps b{display:block}
+.contact{background:var(--ink);color:#fff;padding:36px}.contact h2{color:#fff}.contact p{color:#cdd6df}
+.contact a{color:var(--amber-l)}
+.demo{display:grid;grid-template-columns:1fr 1fr;gap:20px}.demo .full{grid-column:1/-1}
+.ctl{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin:0 0 14px;font-size:14px}.ctl input[type=range]{accent-color:var(--amber)}
+.ctl button,.ctl select,.ctl input[type=search]{font:500 14px "IBM Plex Sans";padding:7px 12px;border:1px solid var(--ink);background:var(--card);cursor:pointer}
+.ctl button.on{background:var(--ink);color:#fff}
+.bar{height:20px;background:var(--line);margin:4px 0 12px}.bar i{display:block;height:100%;width:0;background:var(--teal)}.bar.a i{background:var(--amber)}
+.g{margin:10px 0}.g .bar{margin:2px 0}.g span{font-size:14px}.g.w i{background:var(--amber)}.g.bad i{background:#b3261e}
+.st{display:inline-block;padding:2px 10px;font-weight:600;font-size:13px;background:#d6efe4;color:#0b5a3b}.st.bad{background:#f8d7d4;color:#8c1d18}
+.tag{font-size:12px;padding:1px 8px;border:1px solid var(--line)}
+@media(max-width:820px){.demo{grid-template-columns:1fr}}
+footer{padding:22px 0;font-size:13px;color:var(--mute)}
+@media(max-width:820px){.cols,.charts{grid-template-columns:1fr}.map,.steps{grid-template-columns:1fr}.map div:not(:last-child):after{right:auto;left:50%;top:auto;bottom:-9px;border:8px solid transparent;border-top:9px solid var(--ink);border-bottom:0;transform:translateX(-50%)}.steps div{margin-left:0;margin-top:-1px}nav div a:nth-child(n+4){display:none}}
+</style></head><body>
+<nav><div class="w"><b>NAVEEN KAMALESAN</b><div><a href="#work">Work</a><a href="#demo">Try it</a><a href="#range">Beyond automotive</a><a href="#proof">Evidence</a><a href="#how">How I deliver</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="w hero" id="top">
+<h1>I build software where data has to be right.</h1>
+<p>Full Stack Engineer, 5+ years. Java, Spring Boot, React and Angular systems that move, validate and report data for Daimler Truck, Mercedes-Benz and Ford, built on patterns that carry into any industry with the same problem.</p>
+<div class="cta"><a class="btn p" href="#range">See how it applies to your industry</a><a class="btn" href="mailto:naveenkamalesh0803@gmail.com">Email me</a></div>
+<div class="trace" aria-label="Data pipeline from source systems through batch and API layers to database and user interface"><svg viewBox="0 0 900 96" role="img"><path class="ln" d="M60 40H840"/>
+<g id="tn"></g></svg></div>
+<ul class="facts"><li><b>Now:</b> Cognizant, Daimler Truck FPBOM and Mercedes-Benz diagnostics</li><li><b>Before:</b> Ford fleet and regulatory reporting</li><li><b>Based in:</b> India, open to Chennai and Bengaluru</li></ul>
+</header>
+
+<section id="work"><div class="w"><h2>Work in automotive</h2>
+<p class="lede">Four programmes, each a different kind of problem: interface data exchange, vehicle health monitoring, fleet operations and regulatory reporting. Descriptions are high-level; no client code or architecture is shown.</p>
+<div class="tabs" role="tablist" id="ptabs"></div><div class="panel" id="ppanel" role="tabpanel"></div></div></section>
+
+<section id="demo"><div class="w"><h2>Try the interfaces</h2>
+<p class="lede">Simplified, working models of the jobs and screens I build. All data here is made up.</p>
+<div class="demo">
+<div class="box"><h3>Batch job simulator</h3><p>Why chunked processing beats committing one record at a time.</p>
+<div class="ctl"><label>Records <input type="range" id="bn" min="1000" max="50000" step="1000" value="20000"> <b id="bnv"></b></label><label>Chunk size <input type="range" id="bc" min="50" max="1000" step="50" value="300"> <b id="bcv"></b></label><button id="br">Run</button></div>
+<div>One commit per record: <b id="b1"></b></div><div class="bar a"><i id="p1"></i></div>
+<div>Chunked commits: <b id="b2"></b></div><div class="bar"><i id="p2"></i></div>
+<p id="bt"></p></div>
+<div class="box"><h3>ECU health monitor</h3><p>Live readings with warning thresholds, the idea behind the Mercedes-Benz diagnostics screens.</p>
+<div class="ctl"><span id="es" class="st">All normal</span><button id="ef">Inject coolant fault</button></div><div id="eg"></div></div>
+<div class="box full"><h3>Fleet explorer</h3><p>Filter and sort a sample fleet, like the Ford fleet-operations portal.</p>
+<div class="ctl"><input type="search" id="fq" placeholder="Search vehicle ID" aria-label="Search vehicle ID"><select id="ff" aria-label="Status filter"><option value="">All statuses</option><option>Active</option><option>In service</option><option>Idle</option></select><button data-k="id">Sort by ID</button><button data-k="fuel">Sort by fuel</button><span id="fc"></span></div>
+<div style="overflow-x:auto"><table id="ft"></table></div></div>
+</div></div></section>
+
+<section id="range"><div class="w"><h2>One architecture, many industries</h2>
+<p class="lede">Every project above follows the same shape: data comes in, gets validated, is exposed through services, stored, and shown to people. Pick an industry to see how that shape maps onto it.</p>
+<div class="tabs" role="tablist" id="dtabs"></div>
+<div class="map" id="dmap"></div><div class="base">Runs on AWS (EC2, RDS, S3) &nbsp;·&nbsp; CI/CD with Jenkins or GitHub Actions &nbsp;·&nbsp; Structured logging and monitoring &nbsp;·&nbsp; Component tests on a test database</div>
+<div class="note" id="dnote"></div></div></section>
+
+<section id="proof"><div class="w"><h2>Evidence</h2>
+<p class="lede">Where each technology was used, how long I have been shipping, and one measured result.</p>
+<div class="charts"><div class="box"><h3>Career timeline</h3><p>Programmes by month, June 2021 to now.</p><svg id="gantt" viewBox="0 0 700 230" role="img" aria-label="Timeline of four programmes from 2021 to present"></svg></div>
+<div class="box"><h3>Ford TREAD API response time</h3><p>Before and after optimisation.</p>
+<svg viewBox="0 0 300 150" role="img" aria-label="Response time fell by 98 percent"><text x="0" y="22" font-size="13">Before</text><rect x="0" y="30" width="300" height="26" fill="#c3ccd6"/><text x="0" y="88" font-size="13">After</text><rect x="0" y="96" width="6" height="26" fill="#c85f0f"/><text x="16" y="116" font-size="22" font-weight="800" fill="#c85f0f">98% faster</text></svg></div>
+<div class="box" style="grid-column:1/-1"><h3>Technology by programme</h3><p>Dots mark technologies used on that programme.</p><div style="overflow-x:auto"><table id="mx"></table></div></div></div>
+<p class="note">Also in my toolkit: Hibernate/JPA, TypeScript, PrimeNG, Apache Kafka, SonarQube, Postman, GCP Bucket, Agile/Scrum and AI-assisted coding tools.</p></div></section>
+
+<section id="how"><div class="w"><h2>How I deliver a module</h2>
+<p class="lede">I own work from the first conversation to the demo, then check it with tests that run against a known database.</p>
+<div class="steps"><div><b>Gather</b>Requirements from business stakeholders</div><div><b>Propose</b>Technical approach reviewed with architects</div><div><b>Build</b>APIs, batch jobs and UI</div><div><b>Test</b>Spring Boot component tests on a test database</div><div><b>Ship</b>CI/CD deployment</div><div><b>Demo</b>Walk the business through it</div></div>
+<p class="note">Education: B.E. Electronics and Communication Engineering, Adhiyamaan College of Engineering (2020). Core Java certification (2021).</p></div></section>
+
+<section id="contact"><div class="w"><div class="contact"><h2>Let’s talk about your data problem.</h2>
+<p>Open to Java backend and full-stack roles, in automotive or any industry that moves data between systems.</p>
+<p><a href="mailto:naveenkamalesh0803@gmail.com">naveenkamalesh0803@gmail.com</a> &nbsp;·&nbsp; +91 9345014411 &nbsp;·&nbsp; <a href="https://github.com/navee-99" rel="noopener">GitHub</a></p></div></div></section>
+<footer><div class="w">© 2026 Naveen Kamalesan. Diagrams are conceptual and contain no confidential client information.</div></footer>
+
+<script>
+const $=s=>document.querySelector(s);
+// hero trace
+const st=["Source systems","Spring Batch","REST services","PostgreSQL / SQL Server","React / Angular"];
+$("#tn").innerHTML=st.map((s,i)=>{const x=60+i*195;return `<circle cx="${x}" cy="40" r="8" fill="#f2872e"/><text class="t" x="${x}" y="72" text-anchor="middle">${s}</text>`}).join("");
+// generic tab builder
+function tabs(id,items,fn){const el=$(id);el.innerHTML=items.map((t,i)=>`<button role="tab" aria-selected="${i==0}" data-i="${i}">${t}</button>`).join("");
+ const pick=i=>{el.querySelectorAll("button").forEach((b,j)=>b.setAttribute("aria-selected",i==j));fn(i)};
+ el.onclick=e=>{const b=e.target.closest("button");if(b)pick(+b.dataset.i)};pick(0)}
+// projects
+const P=[
+{n:"Daimler Truck FPBOM",who:"Cognizant · Dec 2024 to now",d:"An interface application that coordinates data exchange between upstream and downstream manufacturing systems.",b:["Built the interface in Java 17 and Spring Boot.","Moved a slow JPA-based workflow to Spring Batch chunk processing to cut long processing times.","Built REST APIs and backend services, with structured logging and monitoring for batch-job runs."],t:["Java 17","Spring Boot","Spring Batch","REST"],s:["One record at a time (JPA)","Read a chunk","Process","Write and commit"],h:3},
+{n:"Mercedes-Benz Onboard Diagnostics",who:"Cognizant · Dec 2024 to now",d:"A web application for ECU data visualisation and vehicle-health monitoring.",b:["Built full-stack features with Java 17, Spring Boot 3, React and PostgreSQL.","Supported the AWS migration (EC2, RDS, S3).","Contributed to CI/CD pipeline improvements."],t:["Java 17","Spring Boot 3","React","PostgreSQL","AWS"],s:["ECU data","Spring Boot API","PostgreSQL","React dashboard"],h:3},
+{n:"Ford Fleet Management",who:"HTC Global Services · Sep to Dec 2024",d:"A fleet-operations platform used to manage vehicle and fleet information.",b:["Built the application foundations: Java/Spring Boot services, database components and Angular frontend.","Created reusable UI components and services so later features were faster to build and easier to maintain."],t:["Java","Spring Boot","Angular"],s:["Fleet operator","Angular portal","Spring Boot services","Database"],h:1},
+{n:"Ford TREAD Reporting",who:"Thirdware / Tech Mahindra · Jun 2021 to Sep 2024",d:"A regulatory-reporting system that turns VIN-based vehicle-investigation records into reports aligned to NHTSA standards.",b:["Developed the TREAD analysis module.","Led a five-developer team migrating legacy applications to Angular 13 with Java 8 and Spring Boot services.","Designed REST APIs, managed PostgreSQL and SQL Server schemas, and improved deployment reliability with Git, Jenkins and automated tests.","Cut API response time by 98%."],t:["Java 8","Spring Boot","Angular 13","PostgreSQL","SQL Server","Jenkins"],s:["VIN records","Angular portal","Java APIs and rules","NHTSA-aligned reports"],h:2}];
+tabs("#ptabs",P.map(p=>p.n),i=>{const p=P[i];$("#ppanel").innerHTML=`<div class="cols"><div><h3>${p.n}</h3><div class="who">${p.who}</div><p>${p.d}</p><ul>${p.b.map(x=>`<li>${x}</li>`).join("")}</ul><div class="chips">${p.t.map(x=>`<span>${x}</span>`).join("")}</div></div><div class="mini"><h4>Conceptual flow</h4><div class="stage" style="flex-direction:column">${p.s.map((x,j)=>`<div class="${j==p.h?"hl":""}">${x}</div>`).join("")}</div></div></div>`});
+// domains
+const D=[
+["Automotive","Proven",["ECU, BOM and VIN records","Spring Batch chunks, validation","Spring Boot REST services","PostgreSQL, SQL Server","React and Angular dashboards, regulatory reports"],"This is the work above, delivered for Daimler Truck, Mercedes-Benz and Ford."],
+["Logistics","Same pattern",["Shipment and telematics feeds","Kafka consumers, batch reconciliation","Tracking and status APIs","PostgreSQL on RDS","Dispatcher dashboard"],"Closest experience: Ford fleet management, with operator-facing Angular screens over vehicle records."],
+["Banking and insurance","Same pattern",["Transaction and policy extracts","Nightly Spring Batch jobs","Reconciliation and reporting services","SQL Server, PostgreSQL","Operations and audit reports"],"Closest experience: TREAD, where record processing ended in standards-aligned regulatory reports."],
+["Healthcare admin","Same pattern",["Claims and eligibility files","Batch file import and validation","Case-status APIs","PostgreSQL on RDS","Case-worker portal"],"Closest experience: FPBOM, where large data files had to be validated before reaching downstream systems."],
+["Retail and e-commerce","Same pattern",["Orders, inventory, catalogue","Kafka events plus bulk imports","Catalogue and stock APIs","PostgreSQL","Merchandising and admin UI in React"],"Closest experience: Spring Batch for bulk loads and React for data-heavy screens."],
+["Energy and utilities","Same pattern",["Meter and device readings","Kafka ingest, batch aggregation","Monitoring APIs","PostgreSQL","Device-health dashboards"],"Closest experience: Mercedes-Benz diagnostics, which visualises ECU data to monitor vehicle health."]];
+const L=["Where data comes from","How it gets in","What serves it","Where it lives","What people see"];
+tabs("#dtabs",D.map(d=>d[0]),i=>{const d=D[i];$("#dmap").innerHTML=d[2].map((x,j)=>`<div><small>${L[j]}</small>${x}</div>`).join("");$("#dnote").innerHTML=`<b>${d[1]==="Proven"?"Delivered in production.":"Applies here, not yet delivered in this industry."}</b> ${d[3]}`});
+// gantt
+(function(){const R=[["Ford TREAD",0,39,"#0c7c86"],["Ford Fleet",39,42,"#4d5b69"],["Daimler FPBOM",42,66,"#c85f0f"],["Mercedes diagnostics",42,66,"#c85f0f"]];
+const X=m=>170+m/66*520;let s="";
+[[7,"2022"],[19,"2023"],[31,"2024"],[43,"2025"],[55,"2026"]].forEach(([m,y])=>s+=`<line x1="${X(m)}" y1="20" x2="${X(m)}" y2="200" stroke="#c3ccd6"/><text x="${X(m)+4}" y="14" font-size="12" fill="#4d5b69">${y}</text>`);
+R.forEach((r,i)=>{const y=34+i*42;s+=`<text x="0" y="${y+19}" font-size="13">${r[0]}</text><rect x="${X(r[1])}" y="${y}" width="${X(r[2])-X(r[1])}" height="26" fill="${r[3]}"/>`});
+s+=`<text x="170" y="222" font-size="12" fill="#4d5b69">Thirdware / Tech Mahindra → HTC → Cognizant</text>`;$("#gantt").innerHTML=s})();
+// matrix
+const C=["TREAD","Fleet","FPBOM","Diagnostics"],M=[["Java",1,1,1,1],["Spring Boot",1,1,1,1],["Spring Batch",0,0,1,0],["REST APIs",1,0,1,0],["Angular",1,1,0,0],["React",0,0,0,1],["PostgreSQL",1,0,0,1],["SQL Server",1,0,0,0],["AWS",0,0,0,1],["CI/CD",1,0,0,1]];
+$("#mx").innerHTML=`<tr><th></th>${C.map(c=>`<th>${c}</th>`).join("")}</tr>`+M.map(r=>`<tr><td>${r[0]}</td>${r.slice(1).map(v=>`<td>${v?'<span class="dot" role="img" aria-label="used"></span>':'<span aria-label="not used"></span>'}</td>`).join("")}</tr>`).join("");
+
+// batch sim
+(function(){const n=$("#bn"),c=$("#bc");let raf;
+const upd=()=>{$("#bnv").textContent=(+n.value).toLocaleString();$("#bcv").textContent=c.value;const k=Math.ceil(n.value/c.value);$("#b1").textContent=(+n.value).toLocaleString()+" commits";$("#b2").textContent=k.toLocaleString()+" commits";$("#bt").textContent=`${Math.round(n.value/k)}x fewer commits. A simulation of the idea; real gains depend on the workload.`;["#p1","#p2"].forEach(x=>$(x).style.width="0")};
+n.oninput=c.oninput=()=>{cancelAnimationFrame(raf);upd()};upd();
+$("#br").onclick=()=>{cancelAnimationFrame(raf);upd();const k=Math.ceil(n.value/c.value),T1=6000,T2=Math.max(300,T1*k/n.value),t0=performance.now();
+const f=t=>{const e=t-t0;$("#p1").style.width=Math.min(100,e/T1*100)+"%";$("#p2").style.width=Math.min(100,e/T2*100)+"%";if(e<T1)raf=requestAnimationFrame(f)};raf=requestAnimationFrame(f)}})();
+// ECU
+(function(){const G=[["Coolant temperature","°C",90,105,60,120],["Battery voltage","V",13.8,11.8,10,15,1],["Engine load","%",45,85,0,100]];const v=G.map(g=>g[2]);let fault=false;
+$("#eg").innerHTML=G.map((g,i)=>`<div class="g" id="g${i}"><span>${g[0]}: <b></b> ${g[1]}</span><div class="bar"><i></i></div></div>`).join("");
+const draw=()=>{let bad=false;G.forEach((g,i)=>{const el=$("#g"+i),x=v[i],hi=g[6]?x<g[3]:x>g[3];if(hi)bad=true;el.className="g"+(hi?" bad":"");el.querySelector("b").textContent=x.toFixed(g[6]?1:0);el.querySelector("i").style.width=(x-g[4])/(g[5]-g[4])*100+"%"});
+$("#es").textContent=bad?"Warning: check coolant or power":"All normal";$("#es").className="st"+(bad?" bad":"")};
+setInterval(()=>{G.forEach((g,i)=>{const t=i==0&&fault?112:g[2];v[i]=Math.max(g[4],Math.min(g[5],v[i]+(t-v[i])*.25+(Math.random()-.5)*(g[5]-g[4])*.03))});draw()},900);
+$("#ef").onclick=e=>{fault=!fault;e.target.classList.toggle("on",fault);e.target.textContent=fault?"Clear fault":"Inject coolant fault"};draw()})();
+// fleet
+(function(){const V=[["TR-1042","Active",78],["TR-1043","In service",34],["TR-1051","Idle",91],["TR-1067","Active",52],["TR-1070","Idle",65],["TR-1088","In service",12],["TR-1092","Active",83],["TR-1101","Idle",47]];let k="id",dir=1;
+const r=()=>{const q=$("#fq").value.toLowerCase(),f=$("#ff").value;const L=V.filter(x=>x[0].toLowerCase().includes(q)&&(!f||x[1]==f)).sort((a,b)=>(k=="id"?a[0].localeCompare(b[0]):a[2]-b[2])*dir);
+$("#fc").textContent=L.length+" of "+V.length+" vehicles";$("#ft").innerHTML="<tr><th>Vehicle</th><th>Status</th><th>Fuel level</th></tr>"+L.map(x=>`<tr><td>${x[0]}</td><td><span class="tag">${x[1]}</span></td><td style="text-align:left"><div class="bar" style="width:140px;display:inline-block;margin:0"><i style="width:${x[2]}%;${x[2]<25?"background:#b3261e":""}"></i></div> ${x[2]}%</td></tr>`).join("")};
+$("#fq").oninput=$("#ff").onchange=r;document.querySelectorAll("[data-k]").forEach(b=>b.onclick=()=>{dir=k==b.dataset.k?-dir:1;k=b.dataset.k;r()});r()})();
+</script></body></html>
